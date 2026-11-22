@@ -1,0 +1,628 @@
+{
+  "corpus_docs": 9,
+  "chunks": 94,
+  "cases": 22,
+  "hit_at_k": 0.7647,
+  "refuse_accuracy": 1.0,
+  "combined_accuracy": 0.8182,
+  "latency_p50_ms": 0.14,
+  "k1": 1.5,
+  "b": 0.75,
+  "top_k": 3,
+  "refuse_threshold": 6.0,
+  "detail": [
+    {
+      "id": "r01",
+      "group": "recall",
+      "q": "怎么新增一个 YAML 声明式工具？",
+      "top": [
+        {
+          "doc": "TOOLS.md",
+          "section": "工具扩展指南：让中枢自己装工具",
+          "score": 14.914
+        },
+        {
+          "doc": "OPERATIONS.md",
+          "section": "工具管理（三层装工具机制，详见 docs/TOOLS.md）",
+          "score": 4.9508
+        },
+        {
+          "doc": "00-README.md",
+          "section": "目录结构",
+          "score": 4.7407
+        }
+      ],
+      "score": 14.914,
+      "ms": 0.17,
+      "hit": true,
+      "expect": [
+        "TOOLS.md"
+      ]
+    },
+    {
+      "id": "r02",
+      "group": "recall",
+      "q": "第三层让模型自己写工具，有哪些安全护栏？",
+      "top": [
+        {
+          "doc": "TOOLS.md",
+          "section": "工具扩展指南：让中枢自己装工具",
+          "score": 17.2423
+        },
+        {
+          "doc": "00-README.md",
+          "section": "特性",
+          "score": 13.0701
+        },
+        {
+          "doc": "00-README.md",
+          "section": "当前状态",
+          "score": 9.5232
+        }
+      ],
+      "score": 17.2423,
+      "ms": 0.213,
+      "hit": true,
+      "expect": [
+        "TOOLS.md"
+      ]
+    },
+    {
+      "id": "r03",
+      "group": "recall",
+      "q": "公网防火墙应该只放行什么？",
+      "top": [
+        {
+          "doc": "DEPLOY.md",
+          "section": "5. 防火墙（重要：只放行 Tailscale）",
+          "score": 10.5857
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "示例 A：一键向中枢汇报位置",
+          "score": 3.2442
+        },
+        {
+          "doc": "TOOLS.md",
+          "section": "命令类（调用系统命令）",
+          "score": 3.1633
+        }
+      ],
+      "score": 10.5857,
+      "ms": 0.14,
+      "hit": true,
+      "expect": [
+        "DEPLOY.md"
+      ]
+    },
+    {
+      "id": "r04",
+      "group": "recall",
+      "q": "怎么给中枢配 HTTPS 证书？",
+      "top": [
+        {
+          "doc": "DEPLOY.md",
+          "section": "11. 语音（可选但强烈推荐）",
+          "score": 7.5137
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "注意",
+          "score": 4.1546
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "2. 聊天入口（PWA）",
+          "score": 3.9705
+        }
+      ],
+      "score": 7.5137,
+      "ms": 0.121,
+      "hit": true,
+      "expect": [
+        "ANDROID.md",
+        "DEPLOY.md"
+      ]
+    },
+    {
+      "id": "r05",
+      "group": "recall",
+      "q": "本月 API 花了多少钱，怎么查？",
+      "top": [
+        {
+          "doc": "DEPLOY.md",
+          "section": "0. 准备清单",
+          "score": 3.7652
+        },
+        {
+          "doc": "TOOLS.md",
+          "section": "命令类（调用系统命令）",
+          "score": 3.2292
+        },
+        {
+          "doc": "00-README.md",
+          "section": "开发",
+          "score": 3.1602
+        }
+      ],
+      "score": 3.7652,
+      "ms": 0.104,
+      "hit": false,
+      "expect": [
+        "COST.md",
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "r06",
+      "group": "recall",
+      "q": "智能路由是怎么省钱的？",
+      "top": [
+        {
+          "doc": "OPERATIONS.md",
+          "section": "智能路由（省钱）",
+          "score": 12.2442
+        },
+        {
+          "doc": "COST.md",
+          "section": "省钱开关（按需在 .env 调整）",
+          "score": 10.3507
+        },
+        {
+          "doc": "OPERATIONS.md",
+          "section": "本月账单（-H 里填 .env 的 AUTH_TOKEN）",
+          "score": 3.4394
+        }
+      ],
+      "score": 12.2442,
+      "ms": 0.108,
+      "hit": true,
+      "expect": [
+        "COST.md",
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "r07",
+      "group": "recall",
+      "q": "App 的自动更新是怎么实现的？",
+      "top": [
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "App 自动更新 + 网站下载",
+          "score": 11.6863
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "更新器行为（2026-10-24 参考 Obtainium / APK-MultiUpdate 改进）",
+          "score": 8.2505
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "注意",
+          "score": 7.683
+        }
+      ],
+      "score": 11.6863,
+      "ms": 0.149,
+      "hit": true,
+      "expect": [
+        "APP-UPDATE.md"
+      ]
+    },
+    {
+      "id": "r08",
+      "group": "recall",
+      "q": "手机端怎么订阅中枢的日历？",
+      "top": [
+        {
+          "doc": "ANDROID.md",
+          "section": "Android 手机接入指南",
+          "score": 12.1646
+        },
+        {
+          "doc": "00-README.md",
+          "section": "架构",
+          "score": 8.8639
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "4. 日历订阅（系统日历看到中枢的日程）",
+          "score": 8.7318
+        }
+      ],
+      "score": 12.1646,
+      "ms": 0.165,
+      "hit": true,
+      "expect": [
+        "ANDROID.md"
+      ]
+    },
+    {
+      "id": "r09",
+      "group": "recall",
+      "q": "Tasker 怎么和中枢联动？",
+      "top": [
+        {
+          "doc": "ANDROID.md",
+          "section": "Android 手机接入指南",
+          "score": 9.7574
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "示例 B：到点提醒微信推送",
+          "score": 5.5615
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "6. Tasker 联动（进阶，P5 阶段再玩）",
+          "score": 5.5279
+        }
+      ],
+      "score": 9.7574,
+      "ms": 0.109,
+      "hit": true,
+      "expect": [
+        "ANDROID.md"
+      ]
+    },
+    {
+      "id": "r10",
+      "group": "recall",
+      "q": "服务挂了或者报错，从哪里开始排查？",
+      "top": [
+        {
+          "doc": "OPERATIONS.md",
+          "section": "故障排查",
+          "score": 6.934
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "2. 上传项目",
+          "score": 5.6801
+        },
+        {
+          "doc": "OPERATIONS.md",
+          "section": "监控告警（Uptime Kuma）",
+          "score": 4.7734
+        }
+      ],
+      "score": 6.934,
+      "ms": 0.16,
+      "hit": true,
+      "expect": [
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "r11",
+      "group": "recall",
+      "q": "MCP 工具是怎么接进来的？",
+      "top": [
+        {
+          "doc": "TOOLS.md",
+          "section": "第二层：MCP 工具生态（mcp.json）",
+          "score": 6.3866
+        },
+        {
+          "doc": "00-README.md",
+          "section": "目录结构",
+          "score": 6.1557
+        },
+        {
+          "doc": "OPERATIONS.md",
+          "section": "工具管理（三层装工具机制，详见 docs/TOOLS.md）",
+          "score": 5.9619
+        }
+      ],
+      "score": 6.3866,
+      "ms": 0.121,
+      "hit": true,
+      "expect": [
+        "TOOLS.md"
+      ]
+    },
+    {
+      "id": "r12",
+      "group": "recall",
+      "q": "中枢记住了哪些关于我的事，怎么删除？",
+      "top": [
+        {
+          "doc": "JOB-SEARCH.md",
+          "section": "用法",
+          "score": 4.9388
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "3. 主动推送（微信）",
+          "score": 4.849
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "9. 微信推送（WxPusher）",
+          "score": 4.1704
+        }
+      ],
+      "score": 4.9388,
+      "ms": 0.165,
+      "hit": false,
+      "expect": [
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "m01",
+      "group": "multi",
+      "q": "部署完成之后要按什么标准做验收？",
+      "top": [
+        {
+          "doc": "PLAN.md",
+          "section": "分阶段路线图（代码侧已全部实现，部署后按序验收）",
+          "score": 8.3784
+        },
+        {
+          "doc": "00-README.md",
+          "section": "当前状态",
+          "score": 7.1844
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "例：bash scripts/tailscale-https.sh jarvis-vps.<你的tailnet>.ts.net",
+          "score": 4.5617
+        }
+      ],
+      "score": 8.3784,
+      "ms": 0.155,
+      "hit": true,
+      "expect": [
+        "DEPLOY.md",
+        "PLAN.md"
+      ]
+    },
+    {
+      "id": "m02",
+      "group": "multi",
+      "q": "如果 API 费用超预算了，可以怎么处理？",
+      "top": [
+        {
+          "doc": "PLAN.md",
+          "section": "已确认的决策（2025）",
+          "score": 5.8533
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "版本查询是公开接口",
+          "score": 4.1588
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "0. 准备清单",
+          "score": 3.7652
+        }
+      ],
+      "score": 5.8533,
+      "ms": 0.144,
+      "hit": false,
+      "expect": [
+        "COST.md",
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "m03",
+      "group": "multi",
+      "q": "新增一项能力需要动哪些地方？",
+      "top": [
+        {
+          "doc": "TOOLS.md",
+          "section": "第三层：让它自己写工具（一句话装工具）",
+          "score": 4.7287
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "部署指南（国内 VPS，直连版）",
+          "score": 3.4266
+        },
+        {
+          "doc": "00-README.md",
+          "section": "开发",
+          "score": 2.9101
+        }
+      ],
+      "score": 4.7287,
+      "ms": 0.139,
+      "hit": true,
+      "expect": [
+        "OPERATIONS.md",
+        "TOOLS.md"
+      ]
+    },
+    {
+      "id": "m04",
+      "group": "multi",
+      "q": "数据备份包含哪些内容，怎么恢复？",
+      "top": [
+        {
+          "doc": "OPERATIONS.md",
+          "section": "备份与恢复",
+          "score": 15.8896
+        },
+        {
+          "doc": "00-README.md",
+          "section": "文档",
+          "score": 5.7012
+        },
+        {
+          "doc": "00-README.md",
+          "section": "开发",
+          "score": 4.088
+        }
+      ],
+      "score": 15.8896,
+      "ms": 0.144,
+      "hit": true,
+      "expect": [
+        "DEPLOY.md",
+        "OPERATIONS.md"
+      ]
+    },
+    {
+      "id": "m05",
+      "group": "multi",
+      "q": "发布新版本之后要做哪些验证？",
+      "top": [
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "App 自动更新 + 网站下载",
+          "score": 8.0372
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "版本查询是公开接口",
+          "score": 7.485
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "版本号规则",
+          "score": 6.8464
+        }
+      ],
+      "score": 8.0372,
+      "ms": 0.149,
+      "hit": true,
+      "expect": [
+        "APP-UPDATE.md"
+      ]
+    },
+    {
+      "id": "n01",
+      "group": "refuse",
+      "q": "这个项目支持 Kubernetes 部署吗？",
+      "top": [
+        {
+          "doc": "00-README.md",
+          "section": "文档",
+          "score": 5.4055
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "3. 安装 Tailscale 并登录（去控制台 approve）",
+          "score": 5.0735
+        },
+        {
+          "doc": "00-README.md",
+          "section": "当前状态",
+          "score": 3.9823
+        }
+      ],
+      "score": 5.4055,
+      "ms": 0.107,
+      "hit": null,
+      "expect": "score < 阈值"
+    },
+    {
+      "id": "n02",
+      "group": "refuse",
+      "q": "怎么配置 Redis 缓存？",
+      "top": [
+        {
+          "doc": "00-README.md",
+          "section": "目录结构",
+          "score": 2.8481
+        },
+        {
+          "doc": "COST.md",
+          "section": "固定成本（VPS）",
+          "score": 2.679
+        },
+        {
+          "doc": "ANDROID.md",
+          "section": "4. 日历订阅（系统日历看到中枢的日程）",
+          "score": 2.2602
+        }
+      ],
+      "score": 2.8481,
+      "ms": 0.074,
+      "hit": null,
+      "expect": "score < 阈值"
+    },
+    {
+      "id": "n03",
+      "group": "refuse",
+      "q": "有没有 iOS 客户端？",
+      "top": [
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "版本查询是公开接口",
+          "score": 2.8562
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "可选：-Apk <路径> -Note \"更新说明\"",
+          "score": 2.8228
+        },
+        {
+          "doc": "APP-UPDATE.md",
+          "section": "注意",
+          "score": 2.2891
+        }
+      ],
+      "score": 2.8562,
+      "ms": 0.069,
+      "hit": null,
+      "expect": "score < 阈值"
+    },
+    {
+      "id": "n04",
+      "group": "refuse",
+      "q": "怎么接入企业微信？",
+      "top": [
+        {
+          "doc": "JOB-SEARCH.md",
+          "section": "求职岗位采集 + 简历匹配（jarvis-hub 工具 `job_search`）",
+          "score": 3.9933
+        },
+        {
+          "doc": "00-README.md",
+          "section": "快速开始",
+          "score": 3.9933
+        },
+        {
+          "doc": "PLAN.md",
+          "section": "架构定调",
+          "score": 3.913
+        }
+      ],
+      "score": 3.9933,
+      "ms": 0.095,
+      "hit": null,
+      "expect": "score < 阈值"
+    },
+    {
+      "id": "n05",
+      "group": "refuse",
+      "q": "能在 Windows Server 上部署吗？",
+      "top": [
+        {
+          "doc": "TOOLS.md",
+          "section": "第二层：MCP 工具生态（mcp.json）",
+          "score": 5.7804
+        },
+        {
+          "doc": "DEPLOY.md",
+          "section": "2. 上传项目",
+          "score": 4.9807
+        },
+        {
+          "doc": "JOB-SEARCH.md",
+          "section": "架构",
+          "score": 4.0912
+        }
+      ],
+      "score": 5.7804,
+      "ms": 0.084,
+      "hit": null,
+      "expect": "score < 阈值"
+    }
+  ]
+}

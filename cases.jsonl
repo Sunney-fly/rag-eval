@@ -1,0 +1,22 @@
+{"id":"r01","group":"recall","q":"怎么新增一个 YAML 声明式工具？","expect_docs":["TOOLS.md"]}
+{"id":"r02","group":"recall","q":"第三层让模型自己写工具，有哪些安全护栏？","expect_docs":["TOOLS.md"]}
+{"id":"r03","group":"recall","q":"公网防火墙应该只放行什么？","expect_docs":["DEPLOY.md"]}
+{"id":"r04","group":"recall","q":"怎么给中枢配 HTTPS 证书？","expect_docs":["DEPLOY.md","ANDROID.md"]}
+{"id":"r05","group":"recall","q":"本月 API 花了多少钱，怎么查？","expect_docs":["COST.md","OPERATIONS.md"]}
+{"id":"r06","group":"recall","q":"智能路由是怎么省钱的？","expect_docs":["COST.md","OPERATIONS.md"]}
+{"id":"r07","group":"recall","q":"App 的自动更新是怎么实现的？","expect_docs":["APP-UPDATE.md"]}
+{"id":"r08","group":"recall","q":"手机端怎么订阅中枢的日历？","expect_docs":["ANDROID.md"]}
+{"id":"r09","group":"recall","q":"Tasker 怎么和中枢联动？","expect_docs":["ANDROID.md"]}
+{"id":"r10","group":"recall","q":"服务挂了或者报错，从哪里开始排查？","expect_docs":["OPERATIONS.md"]}
+{"id":"r11","group":"recall","q":"MCP 工具是怎么接进来的？","expect_docs":["TOOLS.md"]}
+{"id":"r12","group":"recall","q":"中枢记住了哪些关于我的事，怎么删除？","expect_docs":["OPERATIONS.md"]}
+{"id":"m01","group":"multi","q":"部署完成之后要按什么标准做验收？","expect_docs":["DEPLOY.md","PLAN.md"]}
+{"id":"m02","group":"multi","q":"如果 API 费用超预算了，可以怎么处理？","expect_docs":["COST.md","OPERATIONS.md"]}
+{"id":"m03","group":"multi","q":"新增一项能力需要动哪些地方？","expect_docs":["TOOLS.md","OPERATIONS.md"]}
+{"id":"m04","group":"multi","q":"数据备份包含哪些内容，怎么恢复？","expect_docs":["OPERATIONS.md","DEPLOY.md"]}
+{"id":"m05","group":"multi","q":"发布新版本之后要做哪些验证？","expect_docs":["APP-UPDATE.md"]}
+{"id":"n01","group":"refuse","q":"这个项目支持 Kubernetes 部署吗？","expect_docs":[]}
+{"id":"n02","group":"refuse","q":"怎么配置 Redis 缓存？","expect_docs":[]}
+{"id":"n03","group":"refuse","q":"有没有 iOS 客户端？","expect_docs":[]}
+{"id":"n04","group":"refuse","q":"怎么接入企业微信？","expect_docs":[]}
+{"id":"n05","group":"refuse","q":"能在 Windows Server 上部署吗？","expect_docs":[]}
