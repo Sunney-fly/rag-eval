@@ -1,3 +1,7 @@
+[![eval](https://github.com/Sunney-fly/rag-eval/actions/workflows/eval.yml/badge.svg)](https://github.com/Sunney-fly/rag-eval/actions/workflows/eval.yml)
+
+> CI 守门：每次 push / PR 都跑 `check_metrics.py`，hit@3 / 拒答 / 综合 三项只要有一项掉到基线以下，构建就红。
+
 # rag-eval
 
 一个 RAG 检索层的**可复现评测**：9 篇真实工程文档、94 个检索块、22 条用例，纯标准库实现，跑一次不到 1 秒。
